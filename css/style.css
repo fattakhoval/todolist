@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sign_form {
+    display: flex;;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.sign_form input {
+    width: 400px;
+    height: 40px;
+}
+
+.signout_a {
+    text-align: center;
+    text-decoration: none;
+    color: #6C63FF;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.hidden {
+    display: none;
+}
+
+#hiddenBlock {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.light-theme{
+    background-color: white;
+    color: #252525;
+}
+
+#toggleTheme {
+    background: none;
+    border: none;
+}
+
+#toggleTheme img{
+    width: 40px;
+    height: 40px;
+}
+
+.dark-theme, .dark-theme .serch input, .dark-theme .modal-content{
+    background-color: #252525;
+    color: white;
+}
+
+.create_btn {
+    position: absolute;
+    bottom: 30px;
+    right: 25%;
+}
+
+.serch_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 200px;
+}
+
+.serch_div .serch input {
+    width: 650px;
+    height: 40px;
+    border: 1px solid #6C63FF;
+    border-radius: 5px;
+    padding-left: 30px;
+}
+
+.serch_div select, option {
+    width: 80px;
+    height: 40px;
+    border: 1px solid #6C63FF;
+    border-radius: 5px;
+    background-color: #6C63FF;
+    color: #fff;
+}
+
+.div_task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #6C63FF;
+    width: 700px;
+    border-top: none;
+    border-left: none;
+    min-height: 50px;
+    max-height: fit-content;
+}
+
+/* .task_text_main {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    max-height: max-content;
+} */
+
+.task_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 400px;
+}
+
+.task_text p{
+  margin-top: 1rem;
+}
+
+.task_btns {
+    display: flex;
+    justify-content: center;
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+    background-color: #6C63FF;
+}
+
+.checkbox:cheked {
+    background-color: #6C63FF;
+}
+
+
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.sign_nav__a {
+    color: #6C63FF;
+    text-decoration: none;
+}
+
+.form_btn {
+    background-color: #6C63FF;
+    color: #fff;
+    width: 90px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.mine_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
