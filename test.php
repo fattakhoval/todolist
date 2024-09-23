@@ -36,7 +36,7 @@ $id_user = $_SESSION['id_user'];
 <div id="searchResults"></div>
 
 <button type="button" class="btn create_btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    <img src="/images/Add.png" alt="">
+    <img src="/images/Add.png" alt="" draggable="false">
 </button>
 
 
@@ -56,19 +56,19 @@ $id_user = $_SESSION['id_user'];
 
                         <input type="hidden" value="<?= $id_user ?>" name="id_user">
                         <div class="mb-3">
-                            <label for="title"></label>
-                            <input type="text" id="title" name="title" placeholder="Назание задачи">
+                            <label for="title">Название</label>
+                            <input type="text" id="title" name="title" placeholder="Назание задачи" required>
                         </div>
 
                         <div class="mb-3">
-                            <label for="descr"></label>
-                            <input type="text" id="descr" name="descr" placeholder="описание задачи">
+                            <label for="descr">Описание</label>
+                            <input type="text" id="descr" name="descr" placeholder="описание задачи" required>
                         </div>
 
                     </div>
                     <div class="modal-footer">
                         <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                        <button type="submit" class="btn btn-primary create_task" id="create_task">Save changes</button>
+                        <button type="submit" class="btn btn-primary create_task" id="create_task">Создать</button>
 
 
                     </div>
@@ -105,19 +105,19 @@ $id_user = $_SESSION['id_user'];
       <div class="modal-body">
         <input name="id_task" type="hidden" value="${task.id_tasks}">
           <div class="mb-3">
-            <label for="title"></label>
-            <input type="text" id="title" name="title" value="${task.title}" placeholder="Назание задачи">
+            <label for="title">Создание</label>
+            <input type="text" id="title" name="title" value="${task.title}" placeholder="Назание задачи" required>
           </div>
 
           <div class="mb-3">
-            <label for="descr"></label>
-            <input type="text" id="descr" name="descr" value="${task.description}" placeholder="описание задачи">
+            <label for="descr">Описание</label>
+            <input type="text" id="descr" name="descr" value="${task.description}" placeholder="Описание задачи" required>
           </div>
         
       </div>
       <div class="modal-footer">
        
-        <button type="submit" class="btn btn-primary">Save changes</button>
+        <button type="submit" class="btn btn-primary">Создать</button>
       
       
       </div>
@@ -398,7 +398,6 @@ $id_user = $_SESSION['id_user'];
                         $('.modal-backdrop').remove();
                        
                         getAllTaskByUserId();
-
 
                     }
                 },

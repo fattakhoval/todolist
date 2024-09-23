@@ -5,7 +5,7 @@ require_once "connect.php";
 $id_user = $_SESSION['id_user'];
 
 // $tasks = mysqli_fetch_all(mysqli_query($con, "SELECT * FROM `tasks` WHERE id_user = $id_user"));
-$tasks = mysqli_fetch_all(mysqli_query($con, "SELECT * FROM tasks WHERE id_user = $id_user ORDER BY `is_complited` = 0"), MYSQLI_ASSOC);
+$tasks = mysqli_fetch_all(mysqli_query($con, "SELECT * FROM tasks WHERE id_user = $id_user AND `is_complited` LIKE 1"), MYSQLI_ASSOC);
 $response = [
     
     'data' => $tasks

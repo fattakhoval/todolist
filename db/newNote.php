@@ -8,7 +8,8 @@ $id_user = isset($_POST['id_user']) ?intval($_POST['id_user']) : false;
 
 
 if ($title and $descr) {
-    $sql = mysqli_query($con, "INSERT INTO `tasks`(`id_user`, `title`, `description`, `is_complited`) VALUES ($id_user,'$title','$descr',0)");
+    $sql = mysqli_query($con, "INSERT INTO `tasks`(`id_user`, `title`, `description`, `is_complited`) 
+                                            VALUES ($id_user,'$title','$descr',0)");
     
     if ($sql) {
         $id_task = mysqli_insert_id($con); // Get the last inserted ID

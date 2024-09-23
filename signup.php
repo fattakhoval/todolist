@@ -7,23 +7,23 @@ session_start();
 ?>
 
 <nav class="sign_nav">
-    <a href="signup.php" class="sign_nav__a">регистрация</a>
-    <a href="/" class="sign_nav__a">вход</a>
+    <a href="signup.php" class="sign_nav__a">Регистрация</a>
+    <a href="/" class="sign_nav__a">Вход</a>
 </nav>
 <div class="container">
     <div class="sign_form">
     <form action="/db/signup_db.php" method="post" class="main_cont">
         <div class="inp">
-            <label for="login">login</label> <br>
-            <input type="text" id="login" name="login">
+            <label for="login">Логин</label> <br>
+            <input type="text" id="login" name="login" required>
         </div>
 
         <div class="inp">
-            <label for="pass">password</label> <br>
-            <input type="password" id="pass" name="pass">
+            <label for="pass">Пароль</label> <br>
+            <input type="password" id="pass" name="pass" required>
         </div>
        
-        <button class="form_btn">регистрация</button>
+        <button class="form_btn">Регистрация</button>
         
     </form>
     </div>

@@ -2,6 +2,12 @@
 require_once $_SERVER["DOCUMENT_ROOT"] . "/db/connect.php";
 session_start();
 
+if(isset($_SESSION['message'])){
+    $mes = $_SESSION['message'];
+    echo "<script>alert('$mes')</script>";
+    unset($_SESSION['message']);
+}
+
 ?>
 
 <!DOCTYPE html>

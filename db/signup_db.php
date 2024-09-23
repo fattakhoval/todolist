@@ -1,5 +1,7 @@
 <?php 
 require_once "connect.php";
+
+
 session_start();
 
 $login = isset($_POST['login'])?$_POST['login']:false;
@@ -14,5 +16,9 @@ if($login and $pass){
         if($sql){
             header("Location: /");
         }
+    }else {
+        $_SESSION['message']=  'такой логин уже есть';
+        header("Location: /signup.php");
+        
     }
 }
